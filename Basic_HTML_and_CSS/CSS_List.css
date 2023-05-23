@@ -1,0 +1,6 @@
+ol{
+	list-style-type: upper-roman;
+}/* this makes the numbers change to Roman numberals in the list */
+ul{
+	list-style-type: square;
+}/* this makes the circular bullets a square */
