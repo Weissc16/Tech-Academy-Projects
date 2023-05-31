@@ -206,7 +206,7 @@ section {
 --------------------------------------------*/
 .flex-container {
     display: -webkit-flex;
-    display: flex;
+    display: flex-wrap;
     flex-wrap: wrap;
     padding: 10px;
     border-radius: 8px;
