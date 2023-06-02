@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+    font-size: 20;
+}
+
+form input {
+    width:auto;
+    margin: 0%;
+    border: 3px solid red;
+    border-radius: 8px;
+}
