@@ -98,8 +98,8 @@ section {
 }
 
 .container { 
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -158,7 +158,7 @@ section {
     HOME SECTION STYLES
 -----------------------------------------*/
 #home {
-    background: url(../images/thumb/thunderbird_4.jpg) no-repeat 25% 25%;
+    background: url(../images/thumb/thunderbird_4.jpg) no-repeat 30% 30%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -168,7 +168,7 @@ section {
     display: block;
     height: auto;
     padding-top: 50px; /*This is spacer before Main title Logo */
-    padding-bottom: 620px; /* This is spacer after tha Main title Logo */
+    padding-bottom: 750px; /* This is spacer after tha Main title Logo */
     color: #fff;
 }
 
