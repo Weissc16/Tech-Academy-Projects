@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .center{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+            img {
+                width: 50%;
+                height: auto;
+                filter: invert(100%);
+                border-radius: 30px;
+            }
+            footer {
+                text-align: center;
+                font-weight: bold;
+            }
+            table, th, td {
+                border: 1px dotted;
+
+            }
+            td, th {
+                padding: 15px;
+            }
+            td {
+                background-color: yellowgreen;
+            }
+            th {
+                background-color: red;
+            }
+            .container {  /*Container holding the image and text.  Turned color white and centered*/
+                position: relative;
+                text-align: center;
+                color: black;
+            }
+            .bottom-left {
+                position: absolute;
+                bottom: 10%;
+                left: 10%;
+            }
+            .top-right {
+                position: absolute;
+                top: 10%;
+                right: 10%;
+            }
+            .top-left {
+                position: absolute;
+                top: 10%;
+                left: 10%;
+            }
+            .bottom-right {
+                position: absolute;
+                bottom: 10%;
+                right: 10%;
+            }
+            .centered {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .navbar {
+                background-color: lightskyblue;
+                display: block;
+                width: 70px;
+            }
+            li {
+                margin: 0px;
+                padding: 10px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                color: yellow;
+            }
+            a:hover {
+                color:black;
+            }
+            .row:after{
+                content:"";
+                display: table;
+                clear: both;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            .column{
+                float: left;
+                width: 50%;
+                padding: 10px;
+                height: 300px;
+                color:green;
+            }
+            .hover p:hover{
+                color:purple;
+                cursor: pointer;
+                background-color: grey;
+                width: 19%;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 25%;
+                right: 25%;
+                opacity: 0;
+                transition: .5s ease;
+                border-radius: 30px;
+                background-color: #008CBA;
+            }
+            .container:hover .overlay {
+                opacity: 1;
+            }
+            video {
+                width: 150px;
+                height: 200px;
+            }
+            .box {
+                position: relative;
+                text-align: center;
+                color: red;
+            }
+            .text {
+                position: absolute;
+                top:50%;
+                left:45%;
+            }
+        </style>
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--END NAVBAR-->
+
+        <!--IMAGE & TEXT OVERLAY-->
+        <div class="container">
+            <img src="./img/northern_lights.jpg" alt="Portland Oregon">
+            <div class="overlay">
+                <div class="bottom-left">Bottom Left</div>
+                 <div class="top-left">Top Left</div>
+                 <div class="top-right">Top Right</div>
+                 <div class="bottom-right">Bottom Right</div>
+                <div class="centered">Centered</div>
+            </div>
+        </div>
+        <!--END IMAGE & TEXT OVERLAY-->
+
+        <!--TABLE-->
+        <table>
+            <tr>
+                <th>Family Member</th>
+                <th>Relationship</th>
+                <th>Sex</th>
+            </tr>
+            <tr>
+                <td>Rachael Weiss</td>
+                <td>Wife</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Michele Weiss</td>
+                <td>Mother</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Dale Weiss</td>
+                <td>Father</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Theodore Weiss</td>
+                <td>Son</td>
+                <td>Male</td>
+            </tr>
+
+        </table>
+        <!--END TABLE-->
+
+        <!--COLUMN-->
+        <div class="row">
+            <div class="column" style="background-color: #aaa;">
+                <h2>Column 1</h2>
+                <p>Some text...</p>
+            </div>
+            <div class="column" style="background-color: #bbb;">
+                <h2>Column 2</h2>
+                <p>Some text...</p>
+            </div>
+        </div>
+        <!--END COLUMN-->
+
+        <!--<P> ELEMENT WITH HOVER-->
+        <div class="hover">
+            <p>Element with Hover Effect</p>
+        </div>
+        <!--END <P> ELEMENT WITH HOVER-->
+
+        <!--VIDEO-->
+        <div class="box">
+            <video controls autoplay muted loop> <source src="./img/frisbee_dog.mp4" type="video/mp4"></video>
+                <div class="text">Doggie Video</div>
+        </div>
+        <!--END VIDEO-->
+
+
+
+        <!--FOOTER-->
+        <footer>
+            <p>Cody Weiss  |  weissc16@gmail.com</p>
+        </footer>
+        <!--END FOOTER-->
+
+
+
+
+    </body>
+   
